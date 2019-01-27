@@ -91,10 +91,10 @@ ifneq ($(filter pipe, $(DRM_GPU_DRIVERS)),)
 LOCAL_SRC_FILES += gralloc_drm_pipe.c
 LOCAL_CFLAGS += -DENABLE_PIPE
 LOCAL_C_INCLUDES += \
-	external/mesa/include \
-	external/mesa/src \
-	external/mesa/src/gallium/include \
-	external/mesa/src/gallium/auxiliary
+	external/mesa3d/include \
+	external/mesa3d/src \
+	external/mesa3d/src/gallium/include \
+	external/mesa3d/src/gallium/auxiliary
 
 
 LOCAL_SHARED_LIBRARIES += libdl
